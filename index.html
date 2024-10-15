@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigos para Sempre</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Amigos para Sempre</h1>
+    </header>
+
+    <section class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="/fotos/foto 1.jpeg" alt="Amigos 1">
+                <img src="/fotos/foto2.jpeg" alt="Amigos 2">
+                <img src="/fotos/foto3.jpeg" alt="Amigos 3">
+                <img src="/fotos/foto4.jpeg" alt="Amigos 4">
+                <img src="/fotos/foto5.jpeg" alt="Amigos 5">
+                <img src="/fotos/foto6.jpeg" alt="Amigos 6">
+            </div>
+        </div>
+    </section>
+
+    <section class="historia">
+        <h2>Nossa História</h2>
+        <p>
+            Grupo de amigos que viveram a sua infância e adolecência juntos no bairro cultural da Madre Deus, tempos bons que não voltam mais,
+            jogos de futebol no final da tarde, cola bandeira, jogos de damas, xadrez entre outras diversões que hoje já não existem mais, geração que 
+            acompanhou a evolução do Rock Brasil com Bandas em ascensão entre elas, Legião Urbana, RPM, Capital Inicial entre outras. O tempo 
+            passou mais mantemos os nossos laços de amizades até hoje.
+            
+        </p>
+    </section> 
+
+    <section class="encontros">
+        <h2>Próximo Encontro</h2>
+        <ul>
+            <li>Dia: 16/11/2024 - Horário: 16:00 hs - Local: Base do Comandante - Madre Deus (Confraternização 2024)</li>
+            
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Amigos para Sempre - Criação@Alex Peixoto</p>
+    </footer>
+
+    <script>
+        // Código JavaScript para o carrossel
+        let index = 0;
+        const slides = document.querySelectorAll('.carousel-slide img');
+        const totalSlides = slides.length;
+
+        function showSlide() {
+            slides.forEach((slide, idx) => {
+                slide.style.display = (idx === index) ? 'block' : 'none';
+            });
+            index = (index + 1) % totalSlides;
+        }
+
+        setInterval(showSlide, 3000);
+        showSlide();
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel {
+    overflow: hidden;
+    border: 5px solid blue;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.carousel-container {
+    position: relative;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    max-width: 100%;
+    display: block;
+}
+
+.historia, .encontros {
+    padding: 20px;
+    border: 2px solid blue;
+    margin: 20px;
+    text-align: justify;
+}
+
+.encontros ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
